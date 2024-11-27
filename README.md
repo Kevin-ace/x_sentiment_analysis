@@ -105,9 +105,11 @@ text
 sentiment_score
 
 Example CSV Output:
+```
   author_id,created_at,sentiment,text,sentiment_score
   1234567890,2024-11-27 12:00:00,Positive,"I love Python! #Python",0.8
   0987654321,2024-11-27 13:00:00,Negative,"I hate bugs in my code! #frustrated",-0.7
+  ```
 ```
 
 ## Contributing
