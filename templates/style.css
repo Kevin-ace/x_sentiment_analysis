@@ -1,0 +1,64 @@
+/* static/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.bar-chart-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar-chart-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.submit {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #45a049;
+}

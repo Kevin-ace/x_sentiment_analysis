@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sentiment Analysis for Tweets</h1>
+    </header>
+
+    <div class="container">
+        <!-- Keyword Search Form -->
+        <form method="POST" action="/">
+            <label for="keyword">Enter Keyword for Search:</label>
+            <input type="text" name="keyword" id="keyword" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        {% if keyword %}
+            <h2>Results for "{{ keyword }}"</h2>
+
+            <!-- Sentiment Analysis Results -->
+            <div class="results">
+                <h3>Sentiment Results</h3>
+                <ul>
+                    {% for tweet in sentiment_data %}
+                        <li>
+                            <strong>{{ tweet.author_id }}</strong><br>
+                            {{ tweet.text }}<br>
+                            Sentiment: <strong>{{ tweet.sentiment }}</strong><br>
+                            Sentiment Score: {{ tweet.sentiment_score }}<br>
+                            <hr>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Sentiment Bar Chart -->
+            <div class="bar-chart-container">
+                {% if img_b64 %}
+                    <img src="data:image/png;base64,{{ img_b64 }}" alt="Sentiment Bar Chart">
+                {% endif %}
+            </div>
+
+            <div>
+                <a href="/sentiment_analysis_results.csv" download>Download CSV</a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
