@@ -105,11 +105,9 @@ text
 sentiment_score
 
 Example CSV Output:
-  ```cvs
   author_id,created_at,sentiment,text,sentiment_score
   1234567890,2024-11-27 12:00:00,Positive,"I love Python! #Python",0.8
   0987654321,2024-11-27 13:00:00,Negative,"I hate bugs in my code! #frustrated",-0.7
-...
 ```
 
 ## Contributing
@@ -121,7 +119,7 @@ Contributions are welcome! Feel free to fork the repository, submit issues, or c
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 ## Directory Structure
-
+```
 sentiment-analysis-twitter/
 │
 ├── main.py                # Main Flask app
@@ -131,3 +129,4 @@ sentiment-analysis-twitter/
 │   └── index.html        # Main page HTML template
 └── static/               # Static assets like CSS files
     └── style.css         # Custom styles for the app
+```
