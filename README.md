@@ -132,3 +132,4 @@ sentiment-analysis-twitter/
 └── static/               # Static assets like CSS files
     └── style.css         # Custom styles for the app
 ```
+![alt text](image.png)

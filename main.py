@@ -20,7 +20,7 @@ def handle_rate_limit(error):
 nltk.download('vader_lexicon')
 
 # Step 3: Authenticate with Twitter's API using Bearer Token
-client = tweepy.Client(bearer_token='AAAAAAAAAAAAAAAAAAAAAFXSxAEAAAAAfRmyIZZBTLI17R8uBhgR9Fzha5A%3DeErAZYOVymiD3MS4gxACCO2bkEdUNyzsVlTVYy5JhckustU8iX')
+client = tweepy.Client(bearer_token='Your Bearer Token')
 
 # Step 4: Initialize the SentimentIntensityAnalyzer for VADER sentiment analysis
 sia = SentimentIntensityAnalyzer()
