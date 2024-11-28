@@ -121,7 +121,7 @@ Contributions are welcome! Feel free to fork the repository, submit issues, or c
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 ## Directory Structure
-```
+
 sentiment-analysis-twitter/
 │
 ├── main.py                # Main Flask app
@@ -131,5 +131,5 @@ sentiment-analysis-twitter/
 │   └── index.html        # Main page HTML template
 └── static/               # Static assets like CSS files
     └── style.css         # Custom styles for the app
-```
-![alt text](image.png)
+
+[alt text](image.png)
